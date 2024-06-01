@@ -22,7 +22,7 @@ This is a Streamlit application that extracts transcripts from YouTube videos an
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/shivraj-prajapati/youtube-transcribe
+    git clone https://github.com/shivraj-prajapati/youtube-transcript-summarizer
     cd youtube-transcript-summarizer
     ```
 
