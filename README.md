@@ -1,25 +1,69 @@
-YouTube Summarizer
-A Python-based YouTube video summarization tool that uses NLP techniques to generate summaries from video transcripts. Built with Streamlit for a user-friendly web interface.
+# YouTube Transcript to Detailed Notes Converter
 
-Features : 
-● Extracts video transcripts from YouTube.
-● Generates concise summaries using advanced NLP techniques.
-● Interactive Streamlit interface for easy usage.
+This is a Streamlit application that extracts transcripts from YouTube videos and generates a detailed summary using Google's Generative AI (Gemini-Pro). The application summarizes the video transcript in points within 250 words.
 
-Installation
-1. Clone the repository:
-  git clone https://github.com/shivraj-prajapati/youtube-transcribe.git
-  cd maine-youtube-summarizer
+## Features
 
-2. Install the required dependencies:
-  pip install -r requirements.txt
+- Extract transcript from a YouTube video
+- Summarize the transcript into key points within 250 words
+- Display the video thumbnail and detailed notes on the web page
 
-Usage
-1. Run the Streamlit applicatio
-  streamlit run app.py
+## Installation
 
-2.Open your web browser and navigate to the displayed URL to use the summarizer.
-  Dependencies
-    ● Python 3.7+
-    ● Streamlit
-    ● Other dependencies listed in requirements.txt
+### Prerequisites
+
+- Python 3.7 or higher
+- Streamlit
+- Google Generative AI Python client library (`google-generativeai`)
+- YouTube Transcript API (`youtube-transcript-api`)
+
+### Steps
+
+1. **Clone the repository**:
+
+    ```bash
+    git clone https://github.com/shivraj-prajapati/youtube-transcribe
+    cd youtube-transcript-summarizer
+    ```
+
+2. **Create a virtual environment and activate it**:
+
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+
+3. **Install the required packages**:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Set up your Google API key**:
+
+    ```bash
+    export GOOGLE_API_KEY='your_google_api_key'
+    ```
+
+5. **Run the Streamlit app**:
+
+    ```bash
+    streamlit run app.py
+    ```
+
+## Usage
+
+1. Enter the YouTube video link in the input field.
+2. Click the "Get Detailed Notes" button.
+3. Wait for the transcript to be extracted and summarized.
+4. View the video thumbnail and detailed notes on the web page.
+
+## File Structure
+
+| File/Directory       | Description                                            |
+|----------------------|--------------------------------------------------------|
+| `app.py`             | The main Streamlit application script.                |
+| `requirements.txt`   | A file listing the required Python packages.          |
+| `README.md`          | This file.                                             |
+
+
